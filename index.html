@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diverbanco - Empréstimo gratuito de equipamento desportivo e de lazer em Matosinhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="img/DIVERBANCO.png" alt="Diverbanco" class="logo-img">
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link">Encontra equipamento</a>
+                <a href="#" class="nav-link">Como funciona</a>
+                <a href="#" class="nav-link">Notícias</a>
+                <a href="#" class="nav-link">Sobre nós</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <span class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Sport Lines Decoration -->
+        <svg class="sport-lines" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice">
+            <!-- Basketball court lines -->
+            <circle cx="200" cy="400" r="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+            <circle cx="200" cy="400" r="40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+            <line x1="0" y1="400" x2="400" y2="400" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <!-- Soccer field arc -->
+            <path d="M 50 200 Q 200 280 350 200" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+            <path d="M 50 600 Q 200 520 350 600" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+            <!-- Tennis court lines -->
+            <rect x="80" y="150" width="240" height="100" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <rect x="80" y="550" width="240" height="100" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <!-- Running track curves -->
+            <path d="M -50 100 Q 100 150 200 100 Q 300 50 450 100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4"/>
+            <path d="M -50 700 Q 100 650 200 700 Q 300 750 450 700" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4"/>
+            <!-- Additional decorative lines -->
+            <line x1="200" y1="0" x2="200" y2="800" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="20,10"/>
+            <circle cx="200" cy="200" r="30" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <circle cx="200" cy="600" r="30" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+        </svg>
+        <div class="hero-content">
+            <h1>No Divertibanco <strong>usas</strong> equipamento desportivo e de lazer <strong>grátis por 14 dias</strong>.</h1>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="heroSearch" placeholder="Encontra um Divertibanco">
+                </div>
+                <button class="btn-black" id="searchBtn">Procurar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stock Section -->
+    <section class="stock-section">
+        <!-- Decorative sport lines -->
+        <svg class="stock-lines stock-lines-left" viewBox="0 0 200 400" preserveAspectRatio="xMidYMid slice">
+            <path d="M 0 50 Q 100 100 50 200 Q 0 300 100 350" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+            <path d="M -20 150 Q 80 200 30 300" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+        </svg>
+        <svg class="stock-lines stock-lines-right" viewBox="0 0 200 400" preserveAspectRatio="xMidYMid slice">
+            <path d="M 200 0 Q 100 50 150 150 Q 200 250 100 350" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+            <path d="M 180 100 Q 80 150 130 250 Q 180 350 80 400" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <circle cx="150" cy="80" r="40" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+        </svg>
+
+        <div class="stock-card">
+            <div class="stock-image">
+                <img src="img/tenis.jpeg" alt="Ténis">
+            </div>
+            <div class="stock-content">
+                <h2>Vê o que temos em stock</h2>
+                <p>Aqui no nosso site podes ver todo o equipamento que temos em stock em todos os Diverbancos de Matosinhos com alguns cliques.</p>
+                <a href="#" class="btn-primary">
+                    <span class="btn-icon">→</span>
+                    Encontra equipamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <!-- News Item 1 -->
+        <article class="news-card">
+            <div class="news-image">
+                <img src="img/skate.png" alt="Skate em Matosinhos">
+            </div>
+            <div class="news-content">
+                <span class="news-date">1 setembro 2025</span>
+                <h3>Podes emprestar no Zoom Uphill de setembro 2025 a agosto 2026</h3>
+                <p>A Sucedelbanco continua a ler em Matosinhos, Leça da Palmeira e Senhora da Hora. Se não te contivermos antes do Diverbanco antes de algo dizer, fica já, pai de agora, que o Zoom/Oposições futuras. Deste deste dia de Diverbanco - Diverbanco trabalha com para que o dia depois de inpressario oferecer [...]</p>
+                <a href="#" class="btn-outline">
+                    <span class="btn-icon">→</span>
+                    Ler mais
+                </a>
+            </div>
+        </article>
+
+        <!-- News Item 2 -->
+        <article class="news-card">
+            <div class="news-image">
+                <img src="img/basket.png" alt="Basket em Matosinhos">
+            </div>
+            <div class="news-content">
+                <span class="news-date">17 março 2025</span>
+                <h3>Mais oportunidades para descobrir a vida ao ar livre</h3>
+                <p>O Diverbanco inicia agora um trabalho nacional em colaboração com a Federação Portuguesa de Surf para dar a mais pessoas a oportunidade de descobrir o surf e outras atividades aquáticas. O interesse pelo surf e vida ao ar livre cresceu muito em Portugal, mas muitas pessoas não conseguem [...]</p>
+                <a href="#" class="btn-outline">
+                    <span class="btn-icon">→</span>
+                    Ler mais
+                </a>
+            </div>
+        </article>
+
+        <!-- News Item 3 -->
+        <article class="news-card">
+            <div class="news-image">
+                <img src="img/soccer.png" alt="Futebol em Matosinhos">
+            </div>
+            <div class="news-content">
+                <span class="news-date">13 janeiro 2025</span>
+                <h3>Modelo único para certificação de provas acessíveis</h3>
+                <p>A Federação Portuguesa de Ciclismo, a Federação de Triatlo e a Federação de Natação em alguns estados como a Diverbanco tem trabalhado. Mais sob o nome Sens de Samarbete tem treinado focados em dar mais pessoas às crianças e jovens com problemas. Nós, por saúde/saúde ótimo tem um [...]</p>
+                <a href="#" class="btn-outline">
+                    <span class="btn-icon">→</span>
+                    Ler mais
+                </a>
+            </div>
+        </article>
+
+        <a href="#" class="link-yellow center-link">Ver todos</a>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>É assim que funciona</h2>
+        <p>Tens dúvidas sobre se podes emprestar ou devolver equipamento no Diverbanco? Podes emprestar sempre e quantas vezes quiseres? O que fazer se queres começar um Diverbanco na tua zona?</p>
+        <a href="#" class="btn-secondary">Ler mais</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="/" class="logo">
+                    <img src="img/DIVERBANCO.png" alt="Diverbanco" class="logo-img">
+                </a>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Contacto</a>
+                    <a href="#">Política de privacidade</a>
+                    <a href="#">A escola Diverbanco</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Imprensa</a>
+                    <a href="#">Colaboração</a>
+                    <a href="#">Mapa</a>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-lang">
+                <button class="lang-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    In English
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+
+        // Search functionality
+        const searchBtn = document.getElementById('searchBtn');
+        const heroSearch = document.getElementById('heroSearch');
+
+        searchBtn.addEventListener('click', () => {
+            const searchTerm = heroSearch.value.trim();
+            if (searchTerm) {
+                // Redirect to search results page with query
+                window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
+            }
+        });
+
+        heroSearch.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchBtn.click();
+            }
+        });
+    </script>
+</body>
+</html>
