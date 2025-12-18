@@ -5,7 +5,7 @@
 echo "Deploying to GitHub Pages..."
 
 # Get the current branch name
-CURRENT_BRANCH=$(git branch --show-current)
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # Stash any uncommitted changes
 git stash
