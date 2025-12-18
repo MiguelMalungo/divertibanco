@@ -17,7 +17,7 @@ git checkout gh-pages
 git rm -rf . 2>/dev/null || true
 
 # Checkout files from main branch
-git checkout main -- index.html styles.css img/
+git checkout main -- *.html styles.css img/
 
 # Commit the changes
 git add -A
