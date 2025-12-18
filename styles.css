@@ -927,21 +927,21 @@ img {
 }
 
 .bg-skate::before {
-    background-image: url('img/skate.png');
+    background-image: url('img/skate.webp');
 }
 
 .bg-basket::before {
-    background-image: url('img/basket.png');
+    background-image: url('img/basket.webp');
 }
 
 .bg-soccer::before {
-    background-image: url('img/soccer.png');
+    background-image: url('img/soccer.webp');
 }
 
 .bg-tennis::before {
-    background-image: url('img/tenis.jpeg');
+    background-image: url('img/tenis.webp');
 }
 
 .bg-surf::before {
-    background-image: url('img/surf.png');
+    background-image: url('img/surf.webp');
 }
