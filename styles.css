@@ -86,12 +86,12 @@ img {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--dark);
-    transition: color 0.2s, font-weight 0.2s;
+    transition: text-shadow 0.2s;
 }
 
 .nav-link:hover {
-    color: var(--white);
-    font-weight: 700;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+                 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 /* Menu Button */
